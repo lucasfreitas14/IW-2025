@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="português">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções e Âncoras</title>
+    <style>
+        *{  margin: 0;
+            padding: 0;
+            box-sizing: border-box}
+
+        html { scroll-behavior: smooth;}
+
+        body { font-family: sans-serif;
+            background: #0b1020;
+            color: #eee;
+            line-height: 1.6;}
+
+        .container { max-width: 1000px;
+                     margin: auto;
+                     padding: 0 1rem;}
+
+        header {position: sticky;
+                top: 0;
+                background: #111a;
+                border-bottom: 1PX SOLID #23315D}
+
+        nav {   display: flex;
+                justify-content: space-between;
+                align-items : center;
+                padding: 0.7rem 0;}
+
+        nav.logo {font-weight: bold; font-size: 1.2rem}
+
+        nav.menu a { color:#eee;
+            text-decoration: none;
+            padding: 0.4rem 0.7rem;
+            border-radius:20px;
+            margin-left: 0.5rem;}
+
+        nav.menu a:hover {background: #222}
+
+        section { padding: 3rem 0; scroll-margin-top:4rem;}
+
+        h2 { margin-bottom:1rem;}
+
+        .grid { display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr 1fr;}
+
+        .card { background: #111833;
+                border: 1px solid #23315d;
+                border-radius: 12px;
+                padding: 1rem;}
+
+        .price {font-weight: bold;}
+
+        .btn { border: 1px sloid #23315d;
+            background: #1a2340;
+            color: #eee;
+            padding: 0.5rem 0.8rem;
+            border-radius: 10px;
+            cursor: pointer;}
+
+        .btn:hover{background: #15317a; color: #fff;}
+
+        .primary { background: #152a7a; color: #fff;}
+
+        .map iframe { width: 100%; height: 350px; border: 0;}
+
+        footer {padding: 2rem 0; 
+                text-align: center;
+                color: #bbb;
+                border-top: 1px solid #23315d;}
+
+        .back-to-top { 
+            position: fixed;
+            right: 1rem;
+            bottom: 1 rem;
+            padding: 0.6rem 0.9rem;
+            border-radius: 999px;
+            background: #111833;
+            border: 1px solid #23315d;
+            color: #eee;
+            text-decoration: none;
+}
+
+
+    </style>
+   
+</head>
+
+<body>
+
+    <div id="'top"></div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Minha Loja</div>
+                <div class="menu">
+                    <a href="#produtos">Produtos</a>
+                    <a href="#promoçoes">Promoções</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#mapa">Mapa</a>
+                </div>
+            </nav>
+    </header>
+
+    <main class="container">
+
+        <section Id="produtos">
+            <h2>Produtos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Fone Bluetooth</h3>
+                    <p>Cancelamento se ruído e até 30h de bateria.</p>
+                    <div class="price">R$299,90</div>
+                    <button class="btn primary">Comprar</button>
+                </div>
+
+                <div class="card">
+                    <h3>Teclado Mecânico</h3>
+                    <p>Switch silencioso e iluminação ajustavel</p>
+                    <div class="price">R$499,90</div>
+                    <button class="btn primary">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section Id="promocoes">
+            <h2>Promoções</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Smartwatch Fit</h3>
+                    <p>Notificações e resistencia à água</p>
+                    <div class="price">R$429,90</div>
+                    <button class="btn primary">Comprar</button>
+                </div>
+
+                <div class="card">
+                    <h3>Mouse sem Fio</h3>
+                    <p>Regarregável e econômica</p>
+                    <div class="price">R$99,90</div>
+                    <button class="btn primary">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section Id="noticias">
+            <h2>Notícias</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Nova coleção sustentável</h3>
+                    <p>Lançamos uma linha com materiais reciclados.</p>
+                    <button class="btn">Ler Mais</button>
+                </div>
+
+                <div class="card">
+                    <h3>Programa de Fidelidade</h3>
+                    <p>Ganhe pontos e troque por descontos.</p>
+                    <button class="btn">Ler mais</button>
+                </div>
+            </div>
+        </section>
+
+        <sectiion id="mapa" class="map"> 
+            <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.2153137233004!2d-46.41665702454134!3d-23.704003866848428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6cf6b9a660b5%3A0xb470d63bf1a2159e!2sEtec%20de%20Ribeir%C3%A3o%20Pires!5e0!3m2!1spt-BR!2sbr!4v1756842638148!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </sectiion>
+
+        </main>
+
+        <footer>Minha Loja</footer>
+
+        <a href="#top" class="bac-to-top">Topo</a>
+</body>
+</html>
